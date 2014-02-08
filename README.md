@@ -1,7 +1,7 @@
 MCP3304
 =======
 
-Library for MCP3304 13bit ADC
+Library for MCP330x 13bit ADC
 Created by Stefan Wallnoefer, January 8, 2014.
 	with some inspiration form http://forum.arduino.cc/index.php?topic=216121.15
 	Released into the public domain.
@@ -15,3 +15,16 @@ Created by Stefan Wallnoefer, January 8, 2014.
 	
 	The return is an integer from -4096 to 4095 for -Vref to +Vref-1LSB in DIFF mode
 	and 0 to 4095 for o to +Vref-1LSB in SGL mode
+
+
+Functions:
+
+	MCP3304(int CS): constructor, Chipselctpin as argument
+		
+	readAdc(int pin, boolean sgl): reads CH(pin) of the MC330x, sgl true => sSGL, false => DIFF
+		
+	readSgl(int pin): reads CH(pin) in SGL mode
+		
+	readDiff(int pin): reads CH(pin) in DIFF mode
+		
+	getSSPin(): returns the Chipselctpin
