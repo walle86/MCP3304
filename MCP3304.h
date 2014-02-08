@@ -37,7 +37,7 @@ class MCP3304
 		int readDiff(int pin);
 		
 		// Return SS Pinnumber
-		int getSSPin();
+		int getCSPin();
 	
 	private:
 		

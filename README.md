@@ -27,4 +27,4 @@ Functions:
 		
 	readDiff(int pin): reads CH(pin) in DIFF mode
 		
-	getSSPin(): returns the Chipselctpin
+	getCSPin(): returns the Chipselctpin
