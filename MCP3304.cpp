@@ -29,6 +29,8 @@ MCP3304::MCP3304(int CS) {
 
 int MCP3304::readAdc(int pin, boolean sgl) {
 	
+	pin %= 8; //no more then 8 pins
+	
 	SPI.setClockDivider(SPI_CLOCK_DIV16);	//Set Clockdivider for 1MHz SPI freq.
 	
 	SPI.setBitOrder(MSBFIRST);		//set to most significatn bit first
@@ -60,6 +62,8 @@ int MCP3304::readAdc(int pin, boolean sgl) {
 
 int MCP3304::readSgl(int pin) {
 	
+	pin %= 8; //no more then 8 pins
+	
 	SPI.setClockDivider(SPI_CLOCK_DIV16);	//Set Clockdivider for 1MHz SPI freq.
 	
 	SPI.setBitOrder(MSBFIRST);		//set to most significatn bit first
@@ -81,6 +85,8 @@ int MCP3304::readSgl(int pin) {
 }
 
 int MCP3304::readDiff(int pin) {
+	
+	pin %= 8; //no more then 8 pins
 	
 	SPI.setClockDivider(SPI_CLOCK_DIV16);	//Set Clockdivider for 1MHz SPI freq.
 	
