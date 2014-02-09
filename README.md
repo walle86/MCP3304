@@ -2,7 +2,7 @@ MCP3304
 =======
 
 Library for MCP330x 13bit ADC
-Created by Stefan Wallnoefer, January 8, 2014.
+Created by Stefan Wallnoefer, Feb 8, 2014.
 with some inspiration form http://forum.arduino.cc/index.php?topic=216121.15
 	
 for the MCP3304:

@@ -14,7 +14,7 @@ MCP3304	KEYWORD1
 readAdc	KEYWORD2
 readSgl	KEYWORD2
 readDiff	KEYWORD2
-getSSPin	KEYWORD2
+getCSPin	KEYWORD2
 
 ###########################################
 # Constants (LITERAL1)

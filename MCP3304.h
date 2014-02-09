@@ -1,6 +1,6 @@
 /* 
 	MCP3304.h - Library for Microchip MC3302/4 13bit 4/8CH ADC
-	Created by Stefan Wallnoefer, January 8, 2014.
+	Created by Stefan Wallnoefer, Feb 8, 2014.
 	with some inspiration form http://forum.arduino.cc/index.php?topic=216121.15
 	Copyright (c) 2014 Stefan Wallnoefer(walle86) under The MIT License (MIT)
 	

@@ -12,7 +12,7 @@
   * DOUT - to digital pin 12 (MISO pin)
   * CLK - to digital pin 13 (SCK pin)
   
-  created 8 Jan 2014
+  created 8 Feb 2014
   by Stefan Wallnoefer
   
   Thanks to all in this forum post http://forum.arduino.cc/index.php?topic=216121.15
