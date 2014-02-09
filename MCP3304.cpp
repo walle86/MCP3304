@@ -46,7 +46,7 @@ int MCP3304::readAdc(int pin, boolean sgl) {
   byte hi = SPI.transfer(pin << 7);				//lowest Channelbit (D0), rest dont care;return= first 2 returnbits undef, nullbit, Signbit, 4 highest databits
   byte lo = SPI.transfer(0x00);						//send dont care;return= 8 lowest databits
   
-  digitalWrite(CS, HIGH);		//deactivate Chipselect
+  digitalWrite(_CS, HIGH);		//deactivate Chipselect
   
 	byte sign = hi & 0x10;		//extract Sign Bit for DIFF
   int adcValue = ((hi & 0x0f) << 8) + lo;		//combinig the 2 return Values
