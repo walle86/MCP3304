@@ -12,12 +12,13 @@
   * DOUT - to digital pin 12 (MISO pin)
   * CLK - to digital pin 13 (SCK pin)
   
-  created 8 Feb 2014
-  by Stefan Wallnoefer
-  
   Thanks to all in this forum post http://forum.arduino.cc/index.php?topic=216121.15
   who inspired me.
   
+  created 8 Feb 2014
+  by Stefan Wallnoefer
+  for other librarys and sketches look at
+  https://github.com/walle86/ 
 */
   
 #include <MCP3304.h>
@@ -48,12 +49,12 @@ void loop(){
   Serial.println("V");
   reading = adc1.readAdc(0,0);    //read DIFF data with CH0=IN+ and CH1=IN-
   voltage = reading / 4096.0 * 5.0;
-  Serial.print("Diffetrenz CH0-CH1= ");
+  Serial.print("differenz CH0-CH1= ");
   Serial.print(voltage, 3);
   Serial.println("V");
   reading = adc1.readDiff(1);    //read DIFF data with CH1=IN+ and CH0=IN-
   voltage = reading / 4096.0 * 5.0;
-  Serial.print("Spannung CH1-CH0= ");
+  Serial.print("differenz CH1-CH0= ");
   Serial.print(voltage, 3);
   Serial.println("V");
   

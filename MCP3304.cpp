@@ -1,8 +1,7 @@
 /* 
 	MCP3304.h - Library for Microchip MC3302/4 13bit 4/8CH ADC
-	Created by Stefan Wallnoefer, Feb 8, 2014.
+	
 	with some inspiration form http://forum.arduino.cc/index.php?topic=216121.15
-	Copyright (c) 2014 Stefan Wallnoefer(walle86) under The MIT License (MIT)
 	
 	for the MCP3304:
 		use as 8CH single ended ADC (SGL)
@@ -14,6 +13,10 @@
 	The return is an integer from -4096 to 4095 for -Vref to +Vref-1LSB in DIFF mode
 	and 0 to 4095 for o to +Vref-1LSB in SGL mode
 	
+	version 0.1 (Feb 9, 2014) (not finished, only main functions, only Arduino standard SPI)
+	Created by Stefan Wallnoefer, Feb 8, 2014.
+	Copyright (c) 2014 Stefan Wallnoefer(walle86) under The MIT License (MIT)
+	for other librarys and sketches look at https://github.com/walle86/ 
 */
 
 #include <SPI.h>

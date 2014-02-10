@@ -4,6 +4,7 @@ MCP3304
 Library for MCP330x 13bit ADC
 Created by Stefan Wallnoefer, Feb 8, 2014.
 with some inspiration form http://forum.arduino.cc/index.php?topic=216121.15
+version 0.1 (Feb 9, 2014)(not finished, only main functions, only Arduino standard SPI)
 	
 for the MCP3304:
 	use as 8CH single ended ADC (SGL)
